@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>francoTokenApp</title>
+</head>
+<body>
+    <h1>DAPP PARA LA COMPRA DE TOKEN FRANCO</h1>
+    <button id="connect">conectar</button>
+    <div id="content" style="display: none;">
+        <h1>tu cuenta</h1>
+        <span id="recipent"></span>
+        <form id= "send">
+            <h1>ethereum</h1>
+            <label >address</label>
+            <input type="text" placeholder="address destino" id="direccion">
+            <label >amount</label>
+            <input type="number" placeholder="monto ether" id="amount">
+            <button>enviar</button>
+        </form>
+        <form id= "sendErc20">
+            <h1>erc20Token</h1>
+            <span id="cantidad"></span>
+            <label >address</label>
+            <input type="text" placeholder="address destino" id="direccionErc20">
+            <label >amount</label>
+            <input type="number" placeholder="monto ether" id="amountErc20">
+            <button>enviar</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
